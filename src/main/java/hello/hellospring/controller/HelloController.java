@@ -33,7 +33,7 @@ public class HelloController {
     public  Hello helloApi(@RequestParam("name1") String name){
         Hello hello = new Hello();
         hello.setName(name);
-        return hello;       // 문자면 StringConverter, 객체면 JsonConverter로 통신
+        return hello;       // 문자면 StringConverter, 객체면 JsonConverter로 통신 함
     }
     static class Hello{
         private String name;
